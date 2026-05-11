@@ -1,0 +1,36 @@
+[2026-05-08 20:25:04] [INFO ] Login01_Verify_Successfull - Starting berfore suite - initialize extent report
+[2026-05-08 20:25:04] [INFO ] Login01_Verify_Successfull - Starting before class - initialize web driver
+[2026-05-08 20:25:07] [INFO ] Login01_Verify_Successfull - Starting before method - create test in extent report for method: testValidLogin
+[2026-05-08 20:25:08] [INFO ] Login01_Verify_Successfull - Step 1: Click main menu
+[2026-05-08 20:25:08] [INFO ] AndroidNavbarComponent - Click vào element có locator: Located by By.chained({AppiumBy.accessibilityId: View menu})
+[2026-05-08 20:25:09] [INFO ] Login01_Verify_Successfull - Step 2: Click login button
+[2026-05-08 20:25:09] [INFO ] AndroidNavbarComponent - Click vào element có locator: Located by By.chained({AppiumBy.androidUIAutomator: new UiSelector().text("Log In")})
+[2026-05-08 20:25:10] [INFO ] Login01_Verify_Successfull - Step 3: Input username and password
+[2026-05-08 20:25:11] [INFO ] AndroidLoginPage - Nhập dữ liệu: testing141 vào elementLocated by By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches("com.saucelabs.mydemoapp.android.*:id/nameET")})
+[2026-05-08 20:25:11] [INFO ] AndroidLoginPage - Nhập dữ liệu: Carson2309 vào elementLocated by By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches("com.saucelabs.mydemoapp.android.*:id/passwordET")})
+[2026-05-08 20:25:11] [INFO ] Login01_Verify_Successfull - Step 4: Click login button
+[2026-05-08 20:25:11] [INFO ] AndroidLoginPage - Click vào element có locator: Located by By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches("com.saucelabs.mydemoapp.android.*:id/loginBtn")})
+[2026-05-08 20:25:12] [INFO ] Login01_Verify_Successfull - VP1: Verify login successfully
+[2026-05-08 20:25:13] [INFO ] Login01_Verify_Successfull - VP2: Verify logout button display
+[2026-05-08 20:25:13] [INFO ] AndroidNavbarComponent - Click vào element có locator: Located by By.chained({AppiumBy.accessibilityId: View menu})
+[2026-05-08 20:25:25] [INFO ] Login01_Verify_Successfull - Starting after method - capture screenshot if test failed for method: testValidLogin
+[2026-05-08 20:25:25] [INFO ] Login01_Verify_Successfull - Starting after class - quit web driver
+[2026-05-08 20:25:25] [INFO ] Login01_Verify_Successfull - Starting after suite - flush extent report
+[2026-05-08 20:27:05] [INFO ] Login01_Verify_Successfull - Starting berfore suite - initialize extent report
+[2026-05-08 20:27:05] [INFO ] Login01_Verify_Successfull - Starting before class - initialize web driver
+[2026-05-08 20:27:07] [INFO ] Login01_Verify_Successfull - Starting before method - create test in extent report for method: testValidLogin
+[2026-05-08 20:27:07] [INFO ] Login01_Verify_Successfull - Step 1: Click main menu
+[2026-05-08 20:27:07] [INFO ] AndroidNavbarComponent - Click vào element có locator: Located by By.chained({AppiumBy.accessibilityId: View menu})
+[2026-05-08 20:27:10] [INFO ] Login01_Verify_Successfull - Step 2: Click login button
+[2026-05-08 20:27:10] [INFO ] AndroidNavbarComponent - Click vào element có locator: Located by By.chained({AppiumBy.androidUIAutomator: new UiSelector().text("Log In")})
+[2026-05-08 20:27:10] [INFO ] Login01_Verify_Successfull - Step 3: Input username and password
+[2026-05-08 20:27:11] [INFO ] AndroidLoginPage - Nhập dữ liệu: testing141 vào elementLocated by By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches("com.saucelabs.mydemoapp.android.*:id/nameET")})
+[2026-05-08 20:27:11] [INFO ] AndroidLoginPage - Nhập dữ liệu: Carson2309 vào elementLocated by By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches("com.saucelabs.mydemoapp.android.*:id/passwordET")})
+[2026-05-08 20:27:11] [INFO ] Login01_Verify_Successfull - Step 4: Click login button
+[2026-05-08 20:27:11] [INFO ] AndroidLoginPage - Click vào element có locator: Located by By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceIdMatches("com.saucelabs.mydemoapp.android.*:id/loginBtn")})
+[2026-05-08 20:27:12] [INFO ] Login01_Verify_Successfull - VP1: Verify login successfully
+[2026-05-08 20:27:13] [INFO ] Login01_Verify_Successfull - VP2: Verify logout button display
+[2026-05-08 20:27:13] [INFO ] AndroidNavbarComponent - Click vào element có locator: Located by By.chained({AppiumBy.accessibilityId: View menu})
+[2026-05-08 20:27:14] [INFO ] Login01_Verify_Successfull - Starting after method - capture screenshot if test failed for method: testValidLogin
+[2026-05-08 20:27:14] [INFO ] Login01_Verify_Successfull - Starting after class - quit web driver
+[2026-05-08 20:27:15] [INFO ] Login01_Verify_Successfull - Starting after suite - flush extent report

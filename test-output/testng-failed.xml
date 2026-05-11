@@ -5,7 +5,13 @@
     <classes>
       <class name="testcase.login.Login01_Verify_Successfull">
         <methods>
+          <include name="beforeClass"/>
           <include name="testValidLogin"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- testcase.login.Login01_Verify_Successfull -->
     </classes>

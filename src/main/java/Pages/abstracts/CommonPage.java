@@ -1,18 +1,17 @@
 package Pages.abstracts;
 
 import Base.BasePage;
-import Pages.abstracts.components.FooterComponent;
+import Pages.PageFactory;
 import Pages.abstracts.components.NavbarComponent;
 import org.openqa.selenium.WebDriver;
 
 public class CommonPage extends BasePage {
     private NavbarComponent navbarComponent;
-    private FooterComponent footerComponent;
 
     //khơi tạo constructor
     public CommonPage (WebDriver driver){
         super(driver);
-        this.navbarComponent = new NavbarComponent(driver);
+        this.navbarComponent = PageFactory.getNavigatePage();
     }
 
     //khởi tạo component
@@ -20,7 +19,4 @@ public class CommonPage extends BasePage {
         return navbarComponent;
     }
 
-    public FooterComponent getFooterComponent(){
-        return footerComponent;
-    }
 }

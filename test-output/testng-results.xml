@@ -2,23 +2,53 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-13T20:15:48 ICT" name="Gradle suite" finished-at="2026-04-13T20:15:54 ICT" duration-ms="5661">
+  <suite started-at="2026-05-11T19:08:08 ICT" name="Gradle suite" finished-at="2026-05-11T19:08:18 ICT" duration-ms="10138">
     <groups>
     </groups>
-    <test started-at="2026-04-13T20:15:48 ICT" name="Gradle test" finished-at="2026-04-13T20:15:54 ICT" duration-ms="5661">
+    <test started-at="2026-05-11T19:08:08 ICT" name="Gradle test" finished-at="2026-05-11T19:08:18 ICT" duration-ms="10138">
       <class name="testcase.login.Login01_Verify_Successfull">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testcase.login.Login01_Verify_Successfull@7c137fd5]" started-at="2026-04-13T20:15:48 ICT" name="beforeClass" finished-at="2026-04-13T20:15:50 ICT" duration-ms="1230" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testcase.login.Login01_Verify_Successfull@56c9bbd8]" started-at="2026-05-11T19:08:08 ICT" name="beforeSuite" finished-at="2026-05-11T19:08:08 ICT" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testcase.login.Login01_Verify_Successfull@56c9bbd8]" started-at="2026-05-11T19:08:08 ICT" name="beforeClass" finished-at="2026-05-11T19:08:11 ICT" duration-ms="2889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="testValidLogin()[pri:0, instance:testcase.login.Login01_Verify_Successfull@7c137fd5]" started-at="2026-04-13T20:15:50 ICT" name="testValidLogin" description="Verify that user can login successfully with valid credentials" finished-at="2026-04-13T20:15:54 ICT" duration-ms="4329" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcase.login.Login01_Verify_Successfull@56c9bbd8]" started-at="2026-05-11T19:08:11 ICT" name="beforeMethod" finished-at="2026-05-11T19:08:11 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcase.login.Login01_Verify_Successfull.testValidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testValidLogin()[pri:0, instance:testcase.login.Login01_Verify_Successfull@56c9bbd8]" started-at="2026-05-11T19:08:11 ICT" name="testValidLogin" description="Verify that user can login successfully with valid credentials" finished-at="2026-05-11T19:08:18 ICT" duration-ms="7030" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcase.login.Login01_Verify_Successfull@7c137fd5]" started-at="2026-04-13T20:15:54 ICT" name="afterClass" finished-at="2026-04-13T20:15:54 ICT" duration-ms="89" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcase.login.Login01_Verify_Successfull@56c9bbd8]" started-at="2026-05-11T19:08:18 ICT" name="afterMethod" finished-at="2026-05-11T19:08:18 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=Login01_Verify_Successfull.testValidLogin()[pri:0, instance:testcase.login.Login01_Verify_Successfull@56c9bbd8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testcase.login.Login01_Verify_Successfull@56c9bbd8]" started-at="2026-05-11T19:08:18 ICT" name="afterClass" finished-at="2026-05-11T19:08:18 ICT" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testcase.login.Login01_Verify_Successfull@56c9bbd8]" started-at="2026-05-11T19:08:18 ICT" name="afterSuite" finished-at="2026-05-11T19:08:18 ICT" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
       </class> <!-- testcase.login.Login01_Verify_Successfull -->
     </test> <!-- Gradle test -->
   </suite> <!-- Gradle suite -->

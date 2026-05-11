@@ -4,20 +4,17 @@ import Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class NavbarComponent extends BasePage {
-    private By byBtnLogin = By.xpath("//h3[text()=\"Đăng Nhập\"]");
-    private By byBtnRegister = By.xpath("//h3[text()=\"Đăng Ký\"]");
+public abstract class NavbarComponent extends BasePage {
 
     public NavbarComponent(WebDriver driver){
         super(driver);
     }
 
-    public void NavigateToLoginPage(){
-        clickBtn(byBtnLogin);
-    }
+    public abstract void NavigateMainMenu();
 
-    public void NavigateToRegisterPage(){
-        clickBtn(byBtnRegister);
-    }
+    public abstract void NavigateToLoginPage();
 
+    public abstract void NavigateToLogout();
+
+    public abstract boolean isLogoutBtnDisplayed();
 }

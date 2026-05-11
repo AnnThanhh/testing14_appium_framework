@@ -24,10 +24,21 @@ public class BasePage {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         return element;
     }
+
+    public WebElement waitVisibilityOf(WebElement element, long timeOutInSec){
+        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(timeOutInSec));
+        return wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
     public WebElement waitForElementClickable(By locator, long timeOutInSec){
         WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(timeOutInSec));
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         return element;
+    }
+
+    public WebElement waitForElementClickable(WebElement element, long timeOutInSec){
+        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(timeOutInSec));
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     public void inputText(By locator, String value, long timeOutInSec){;
@@ -39,6 +50,15 @@ public class BasePage {
         inputText(locator, value, TimeOutConstant.TIME_OUT_DEFAULT);
     }
 
+
+    public void inputText(WebElement element, String value, long timeOutInSec){;
+        waitVisibilityOf(element, timeOutInSec).sendKeys(value);
+        LOG.info("Nhập dữ liệu: " + value + " vào element" + element);
+    }
+    public void inputText(WebElement element, String value){
+        inputText(element, value, TimeOutConstant.TIME_OUT_DEFAULT);
+    }
+
     public void clickBtn (By locator, long timeOutInSec){
         LOG.info("Click vào element có locator: " + locator);
         WebElement element = waitForElementClickable(locator, timeOutInSec);
@@ -48,10 +68,25 @@ public class BasePage {
         clickBtn(locator, TimeOutConstant.TIME_OUT_DEFAULT);
     }
 
+    public void clickBtn (WebElement element, long timeOutInSec){
+        LOG.info("Click vào element có locator: " + element);
+        waitForElementClickable(element, timeOutInSec).click();
+    }
+    public void clickBtn (WebElement element){
+        clickBtn(element, TimeOutConstant.TIME_OUT_DEFAULT);
+    }
+
     public String getTextElement(By locator, long timeOutInSec){
         WebElement element = waitForElementVisible(locator, timeOutInSec);
         return element.getText();
     }
     public String getTextElement(By locator){
         return getTextElement(locator, TimeOutConstant.TIME_OUT_DEFAULT);}
+
+    public String getTextElement(WebElement element, long timeOutInSec){
+        return waitVisibilityOf(element, timeOutInSec).getText();
+
+    }
+    public String getTextElement(WebElement element){
+        return getTextElement(element, TimeOutConstant.TIME_OUT_DEFAULT);}
 }
